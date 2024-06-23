@@ -6,8 +6,8 @@ with open('rf_model.pkl', 'rb') as model_file:
     rf_model = pickle.load(model_file)
 
 # Streamlit interface
-st.title('Numerical Input Form')
-st.header('Enter Your Numbers')
+st.title('Sports Predictor')
+st.header('Fill in the values')
 
 # Define default values or initializations
 number1 = number2 = number3 = number4 = number5 = 0.0
