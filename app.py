@@ -20,15 +20,15 @@ with st.form(key='numerical_form'):
     # Define input fields in two columns
     with col1:
         number1 = st.number_input('Potential', value=0.0)
-        number2 = st.number_input('Value In Euros', value=0.0)
-        number3 = st.number_input('Wage In Euros', value=0.0)
+        number2 = st.number_input('Value (Euros)', value=0.0)
+        number3 = st.number_input('Wage (Euros)', value=0.0)
         number4 = st.number_input('Passing Ability', value=0.0)
         number5 = st.number_input('Dribbling Ability', value=0.0)
         
     with col2:
-        number6 = st.number_input('Physic', value=0.0)
-        number7 = st.number_input('Movement Reactions', value=0.0)
-        number8 = st.number_input('Mentality Composure', value=0.0)
+        number6 = st.number_input('Physique', value=0.0)
+        number7 = st.number_input('Movement Reaction Rating', value=0.0)
+        number8 = st.number_input('Mental Composure', value=0.0)
         number9 = st.number_input('Right Foot', value=0.0)
         number10 = st.number_input('Left Foot', value=0.0)
         
@@ -40,13 +40,13 @@ if submit_button:
     # Display submitted numbers
     st.subheader('Submitted Numbers')
     st.write(f'Potential: {number1}')
-    st.write(f'Value In Euros: {number2}')
-    st.write(f'Wage In Euros: {number3}')
+    st.write(f'Value (Euros): {number2}')
+    st.write(f'Wage (Euros): {number3}')
     st.write(f'Passing Ability: {number4}')
     st.write(f'Dribbling Ability: {number5}')
-    st.write(f'Physic: {number6}')
-    st.write(f'Movement Reactions: {number7}')
-    st.write(f'Mentality Composure: {number8}')
+    st.write(f'Physique: {number6}')
+    st.write(f'Movement Reaction Rating: {number7}')
+    st.write(f'Mental Composure: {number8}')
     st.write(f'Right Foot: {number9}')
     st.write(f'Left Foot: {number10}')
     
@@ -57,4 +57,3 @@ if submit_button:
     st.write(f'Prediction: {prediction}')
     
     st.markdown('---')
-    st.markdown('Created with ❤️ by Brigidi Ackah Blay Thompson')
